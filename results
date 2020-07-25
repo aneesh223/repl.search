@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google-signin-client_id" content="822668197802-feumh5s3lo9f4836tggmsgqg6d32d65m.apps.googleusercontent.com">
     <title>Repl.search</title>
-    <link href="stylesheets/style.css" rel="stylesheet" type="text/css" />
-    <link href="stylesheets/cse.css" rel="stylesheet" type="text/css" />    
+    <link href="stylesheets/style.css" rel="stylesheet" type="text/css" /> 
   </head>
   <body>
     <div class="container" align="right">
@@ -16,14 +15,13 @@
       <img onclick="window.open('https://myaccount.google.com/')" id="propic" width="50">
       <button onclick="signOut();" class="text">Sign out</button>
     </div>
-    <div class="container" align="center">
-      <h1 class="text">Repl.search</h1>
-      <h2 class="text">Searches all things repl.it</h2>
-      <div id="searchbar" align="center">
-        <script async src="https://cse.google.com/cse.js?cx=003669978326556586863:ufse9fpe8f4"></script>
-        <div class="gcse-searchbox-only" data-resultsUrl="https://replsearch--johndo3.repl.co/results"></div>
+    <div class="container">
+      <script async src="https://cse.google.com/cse.js?cx=003669978326556586863:ufse9fpe8f4"></script>
+      <div class="gcse-searchbox-only" id="search2" data-resultsUrl="https://replsearch--johndo3.repl.co/results"></div>
+      <div class="gcse-searchresults-only"></div>
+      <div align="center">
+        <p class="text">© 2020 Syntax Corp.</p>
       </div>
-      <p class="text">© 2020 Syntax Corp.</p>
     </div>
     <script src="javascripts/func.js"></script>
     <script src="javascripts/gapi.js"></script>
