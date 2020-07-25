@@ -2,28 +2,30 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link href="profile.png" rel="icon" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google-signin-client_id" content="822668197802-feumh5s3lo9f4836tggmsgqg6d32d65m.apps.googleusercontent.com">
     <title>Repl.search</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
- 
+    <link href="stylesheets/style.css" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/cse.css" rel="stylesheet" type="text/css" />    
   </head>
   <body>
-    <div class="container" align="right">      
-      <div class="g-signin2" onclick="onSignIn();"></div>     
+    <div class="container" align="right">
+      <div class="g-signin2" onclick="onSignIn();"></div>
       <p></p>
+      <img onclick="window.open('https://myaccount.google.com/')" id="propic" width="50">
       <button onclick="signOut();" class="text">Sign out</button>
     </div>
-    <div class="container" align="center">  
+    <div class="container" align="center">
       <h1 class="text">Repl.search</h1>
       <h2 class="text">Searches all things repl.it</h2>
       <div id="searchbar" align="center">
-        <div class="gcse-searchbox-only"  data-resultsUrl="https://johndoe434.github.io/repl.search/"></div>
-        <div class="gcse-searchresults-only"></div>
+        <script async src="https://cse.google.com/cse.js?cx=003669978326556586863:ufse9fpe8f4"></script>
+        <div class="gcse-searchbox-only" data-resultsUrl="https://replsearch--johndo3.repl.co/results"></div>
       </div>
-      <p class="text">© Syntax Corp.</p>      
+      <p class="text">© 2020 Syntax Corp.</p>
     </div>
-    <script src="javascripts/func.js"></script>    
+    <script src="javascripts/func.js"></script>
     <script src="javascripts/gapi.js"></script>
-    <script src="javascripts/gcse.js"></script>
   </body>
 </html>
